@@ -16,6 +16,13 @@ Außerdem muss für das Modul die **module-info.java** erzeugt werden (sollte da
 * Rechtsklick auf java ordner -> New -> module-info.java
 
 Diese Datei wird benötigt um Abhängigkeiten zwischen Modulen zu definieren.
+Grundsätzlicher Aufbau:
+```
+**module** providermodule {
+    requires servicemodule;
+    provides com.mci.servicemodule.TextService with com.mci.providermodule.LowercaseTextService;
+}
+```
 
 
 Jedes Modul kann als eigenständiges (Sub-) Projekt angesehen werden, dementsprechend gibt es auch in jedem Modul einen src ordner (samt main und test) in dem sich der Code befindet. Jedes Module hat auch ein eigenständiges build.gradle file.
