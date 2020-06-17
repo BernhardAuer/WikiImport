@@ -19,4 +19,4 @@ Deshalb ist die zweite Variante mMn. sinnvoller, auch wenn sie etwas komplexer i
 Bietet eine "out of the box" Entkoppelung durch entsprechende Konfiguration der div. module-info.java Dateien - d.h. die FactoryClass entfällt.
 
 * ProviderModule:
-> * provides com.baeldung.servicemodule.TextService with com.baeldung.providermodule.LowercaseTextService;
+* `provides com.baeldung.servicemodule.TextService with com.baeldung.providermodule.LowercaseTextService;`
