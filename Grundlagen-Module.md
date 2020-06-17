@@ -19,4 +19,4 @@ Diese Datei wird benötigt um Abhängigkeiten zwischen Modulen zu definieren.
 
 
 Jedes Modul kann als eigenständiges (Sub-) Projekt angesehen werden, dementsprechend gibt es auch in jedem Modul einen src ordner (samt main und test) in dem sich der Code befindet. Jedes Module hat auch ein eigenständiges build.gradle file.
-Wichtig: Damit das gradle Projekt kompiliert werden kann, müssen dort die richtigen Abhängigkeiten verknüpft werden.
+Wichtig: Damit das gradle Projekt kompiliert werden kann, müssen dort die richtigen Abhängigkeiten verknüpft werden. Nähere Infos in der "Gradle" Wiki Seite
