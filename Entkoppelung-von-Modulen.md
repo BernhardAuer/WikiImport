@@ -20,8 +20,8 @@ Bietet eine "out of the box" Entkoppelung durch entsprechende Konfiguration der 
 
 Die vollständigen module-info.java Dateien befinden sich im ServiceLoader branch, hier ein Auszug der wichtigen Konfiguration:
 * ServiceModule:
-    * `**exports** [Package, welches Interface beinhaltet]`
+    * `exports [Package, welches Interface beinhaltet]`
 * ProviderModule:
-    * `**provides** [Interface] **with** [Class welche die Implementierung des Interface enthält];`
+    * `provides [Interface] with [Class welche die Implementierung des Interface enthält];`
 * ConsumerModule:
-    * `**uses** [Interface];`
+    * `uses [Interface];`
