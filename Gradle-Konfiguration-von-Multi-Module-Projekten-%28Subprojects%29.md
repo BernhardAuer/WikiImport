@@ -17,3 +17,27 @@ application {
     mainClass = '[Klassenname, welche die statische Main-Methode beinhaltet (mit package-pfad)]'
 }
 ```
+
+**Wichtig:** In Gradle scheint es noch einen Bug zu geben (oder ist das gewollt!?), welche es nötig macht folgende Zeilen ebenfalls im root gradle.build file einzufügen:
+```
+subprojects {
+    java {
+        modularity.inferModulePath = true
+
+        tasks.withType(JavaCompile) {
+            doFirst {
+                options.compilerArgs = [
+                        '--module-path', classpath.asPath,
+                ]
+                classpath = files()
+            }
+        }
+    }
+}
+```
+
+Auf root Ebene gibt es noch ein **settings.gradle** File, welches alle Module angeben muss:
+```
+include '[Modulname (ohne Pfad)]'
+
+```
