@@ -28,7 +28,7 @@ In den geschweiften Klammern kann:
 * Modulart "Consumer" definiert werden `uses [Interface (vollständiger Pfad)]`
 * Modulart "Provider" definiert werden `provides [Interface (vollständiger Pfad)] with [Class (vollständiger Pfad]`
 
--> mehr dazu unter ""
+-> mehr dazu unter "Entkoppelung von Modulen"
 
 Jedes Modul kann als eigenständiges (Sub-) Projekt angesehen werden, dementsprechend gibt es auch in jedem Modul einen src ordner (samt main und test) in dem sich der Code befindet. Jedes Module hat auch ein eigenständiges build.gradle file.
-Wichtig: Damit das gradle Projekt kompiliert werden kann, müssen dort die richtigen Abhängigkeiten verknüpft werden. Nähere Infos in der "Gradle" Wiki Seite
+Wichtig: Damit das gradle Projekt kompiliert werden kann, müssen dort ebenfalls die richtigen Abhängigkeiten (zum Kompilieren) verknüpft werden. Nähere Infos in der "Gradle" Wiki Seite
