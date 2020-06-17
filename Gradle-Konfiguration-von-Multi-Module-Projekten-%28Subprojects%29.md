@@ -41,3 +41,4 @@ Auf root Ebene gibt es noch ein **settings.gradle** File, welches alle Module an
 include '[Modulname (ohne Pfad)]'
 
 ```
+Nun sollte gradle build bzw. gradle run funktionieren!
