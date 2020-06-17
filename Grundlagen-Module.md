@@ -25,7 +25,10 @@ module [Modulname (ohne Pfad)] {
 In den geschweiften Klammern kann:
 * Ein Package des eigenen Moduls exportiert (= für andere Module sichtbar) gemacht werden `exports [Package (vollständiger Pfad)]; `
 * Eine Abhängigkeit zu einem anderen Modul (= importieren) definiert werden `requires [Modulname (ohne Pfad)]`
-* 
+* Modulart "Consumer" definiert werden `uses [Interface (vollständiger Pfad)]`
+* Modulart "Provider" definiert werden `provides [Interface (vollständiger Pfad)] with [Class (vollständiger Pfad]`
+
+-> mehr dazu unter ""
 
 Jedes Modul kann als eigenständiges (Sub-) Projekt angesehen werden, dementsprechend gibt es auch in jedem Modul einen src ordner (samt main und test) in dem sich der Code befindet. Jedes Module hat auch ein eigenständiges build.gradle file.
 Wichtig: Damit das gradle Projekt kompiliert werden kann, müssen dort die richtigen Abhängigkeiten verknüpft werden. Nähere Infos in der "Gradle" Wiki Seite
