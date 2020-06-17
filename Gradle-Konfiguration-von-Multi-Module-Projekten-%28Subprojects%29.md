@@ -42,3 +42,5 @@ include '[Modulname (ohne Pfad)]'
 
 ```
 Nun sollte gradle build bzw. gradle run funktionieren!
+
+Mehr infos: https://guides.gradle.org/creating-multi-project-builds/
